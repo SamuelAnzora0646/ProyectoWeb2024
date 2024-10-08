@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "react-scripts test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@react-google-maps/api": "^2.19.3",
     "axios": "^1.7.7",
     "cheerio": "^1.0.0",
-    "express": "^4.21.0"
+    "express": "^4.21.0",
+    "leaflet": "^1.9.4",
+    "react-leaflet": "^4.2.1"
   }
 }
