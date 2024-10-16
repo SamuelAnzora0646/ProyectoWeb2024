@@ -1,5 +1,8 @@
+//Que requiera ela libreria xpress
 const express = require('express');
+//Constante de tipo express
 const app = express();
+//Creamos el puerto 
 const PORT = process.env.PORT || 3000;
 
 // Datos de rutas y recorridos
@@ -205,12 +208,18 @@ const routes = [
     ];
 
 
-// Middleware para habilitar CORS
-app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-});
+// // Middleware para habilitar CORS
+// app.use((req, res, next) => {
+//     // Permitir solicitudes desde cualquier origen (dominio)
+//     res.header("Access-Control-Allow-Origin", "*");
+    
+//     // Permitir ciertos headers en la solicitud
+//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    
+//     // Continuar con el siguiente middleware o ruta
+//     next();
+// });
+
 
 
 // Ruta para la raíz
@@ -225,7 +234,7 @@ app.get('/api/routes', (req, res) => {
 
 // Iniciar el servidor
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Servidor corriendo en  http://localhost:${PORT}`);
 });
 
 

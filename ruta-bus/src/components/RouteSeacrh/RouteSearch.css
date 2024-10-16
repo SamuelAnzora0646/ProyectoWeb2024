@@ -1,21 +1,19 @@
-
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    margin: auto;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 /* Diseño general */
 .container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
+    /* max-width: 1200px; */
+    padding: 30px;
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
+    margin: 0 0 0 10%;
 }
 
 h1 {
@@ -52,21 +50,24 @@ h1 {
     display: flex;
     gap: 20px;
     width: 100%;
+    height: 50rem;
 }
 
 /* Lista de rutas */
 .route-list {
     flex: 1;
-    max-height: 500px;
-    overflow-y: auto;
+    /* max-height: 500px; */
+    overflow: scroll;
     background-color: #154360;
     border-radius: 8px;
     padding: 10px;
+    height: 100%;
+
 }
 
 ul {
     list-style-type: none;
-    padding: 0;
+    /* padding: 0; */
 }
 
 li {
@@ -112,6 +113,8 @@ li {
 
     .route-list {
         margin-bottom: 20px;
+        display: block;
+        height: 200px;
     }
 }
 
@@ -128,12 +131,6 @@ li {
     width: 100%;
     height: 100%;
     border-radius: 12px;
-}
-
-@media (max-width: 768px) {
-    .map-container {
-        height: calc(100vh - 150px); /* Más espacio para dispositivos móviles */
-    }
 }
 
 /* Mapa */

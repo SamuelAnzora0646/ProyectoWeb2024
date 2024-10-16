@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --dark: #1a1334;
+    --primary: #26294a;
+    --secondary: #01545a;
+    --light: #017351;
+}
+
+*::selection {
+    background-color: var(--light);
+    color: white;
+}
+
+html {
+    font-size: 62.4%;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+}
+
+
+.navbar {
+    display: flex;
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+header .navbar a {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color: var(--secondary);
+}
+
+header .navbar a:hover {
+    color: var(--primary);
+    border-bottom: solid var(--primary);
+}
+
+.bars-menu {
+    visibility: hidden;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    right: 9%;
+    transform: translate(-50%, -50%);
+}
+
+.bars-menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 1000ms;
+}
+
+.header-2 .line1 {
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.header-2 .line2 {
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.header-2 .line3 {
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+@media (max-width: 800px) {
+    .bars-menu {
+        visibility: visible;
+    }
+
+    header {
+        border-bottom: 1px solid rgba(0, 0, 0, .5);
+    }
+
+    header .navbar {
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        left: 0;
+        padding: 0 0 10px 40px;
+        /* margin-top: 10px; */
+        transition: none step-end 1000ms;
+        opacity: 0;
+        box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+        width: 100vw;
+        background: #ffffff;
+        border-top: 1px solid rgba(0, 0, 0, .5);
+    }
+
+    .header-2 .navbar {
+        opacity: 1;
+    }
+
+    .navbar a {
+        margin-top: 10px;
+    }
+}
+
+
+.navbar a:last-child {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color: var(--secondary);
+}
+
+.navbar a:last-child:hover {
+    color: var(--primary);
+}
+
+
+.navbar a img {
+    width: 20px;
+    /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    vertical-align: middle;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  
+  .search-input {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    margin-right: 0.5rem;
+  }
+  
+  .search-button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .search-button:hover {
+    background-color: var(--secondary);
+  }
+  .search-form {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    transition: all 0.3s ease; /* Agrega una transición suave */
+  }
+  
+  .search-input {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    width: 200px; /* Puedes ajustar el ancho como prefieras */
+  }
+  
+  .search-button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .search-button:hover {
+    background-color: var(--secondary);
+  }
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  transition: all 0.3s ease; /* Agrega una transición suave */
+}
+
+.search-input {
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  width: 200px; /* Puedes ajustar el ancho como prefieras */
+}
+
+.search-button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-button:hover {
+  background-color: var(--secondary);
+}
+  

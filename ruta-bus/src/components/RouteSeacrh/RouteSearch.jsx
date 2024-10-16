@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import { GoogleMap, LoadScript, Marker, Polyline } from '@react-google-maps/api';
 import './RouteSearch.css'; // Asegúrate de que esté el CSS
@@ -74,7 +75,7 @@ const RouteSearch = () => {
                         )}
                     </div>
 
-                    {/* Contenedor del mapa */}
+                
                     <div className="map-container">
                         <LoadScript googleMapsApiKey="TU_CLAVE_DE_API">
                             <GoogleMap
